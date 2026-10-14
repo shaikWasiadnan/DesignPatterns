@@ -1,0 +1,32 @@
+Singelton Design Pattern:
+Main Agenda of singelton design pattern is to create only one object per class.
+so we should restrict someone from outside to create an object of a class directly
+by using new Keyword. so we will make our class constructor private.so no one will
+be able to create object of our class from outside of class.
+we can implement singelton design pattern in many ways they are
+1)Eager INITIALIZATION
+->In Eager INITIALIZATION we will declare a private static final variable where we
+will be directly create an object as this is final no one can change it and as it is
+private no one outside the class can access it.
+->Now create a public method which will return our same object everytime.
+->The problem with Eager INITIALIZATION is we are creating object of our class upfront.
+which will consume memory in HEAP Area even if no one uses it
+2)Lazy Initialization
+->Here we will be not initialization our variable directly
+->In getInstance() method we will be checking if our variable is null then we will initialize
+it.if not null directly return it.so we will be creating object only when needed
+->This fails in Multithreaded environment
+3)Using Synchronized method
+->In LazyInitialization make getInstance() method synchronized so only one thread can access
+the critical section at one time.
+->Issue here is lets say we are calling getInstance() at thousand places then when one thread
+is inside getInstance() method then remaining 999 threads should wait,This is performance issue
+4)Using Double checked locking
+->Using Double checked locking we remove synchronized from method level and add synchronized
+at block level so remaining threads can access code inside getInstance() which donot require
+locking easily.
+->Issue here is still if at beginning 1000 threads reach synchronized block then they should go
+through that block still performance issue
+5)Using Bill pugh solution
+->Create an inner static class which has static final variable and inside static getInstance()
+return that final variable ,here no locking no performance issue.
