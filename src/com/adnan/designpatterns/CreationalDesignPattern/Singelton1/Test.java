@@ -1,4 +1,4 @@
-package com.adnan.designpatterns.CreationalDesignPattern.Singelton;
+package com.adnan.designpatterns.CreationalDesignPattern.Singelton1;
 
 public class Test {
     public static void main(String[] args) {

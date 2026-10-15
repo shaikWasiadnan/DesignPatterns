@@ -1,4 +1,4 @@
-package com.adnan.designpatterns.CreationalDesignPattern.Singelton.SingeltonBreakers;
+package com.adnan.designpatterns.CreationalDesignPattern.Singelton1.SingeltonBreakers;
 
 import java.io.Serializable;
 

@@ -1,6 +1,4 @@
-package com.adnan.designpatterns.CreationalDesignPattern.Singelton;
-
-import java.io.Serializable;
+package com.adnan.designpatterns.CreationalDesignPattern.Singelton1;
 
 public class Singelton  {
     //Eager Initialization
