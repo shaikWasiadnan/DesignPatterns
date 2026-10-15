@@ -1,6 +1,8 @@
 package com.adnan.designpatterns.CreationalDesignPattern.Singelton;
 
-public class Singelton {
+import java.io.Serializable;
+
+public class Singelton  {
     //Eager Initialization
     //private static Singelton eagerObj = new Singelton();
     //Lazy Initialization
